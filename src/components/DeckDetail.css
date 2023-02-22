@@ -1,0 +1,42 @@
+.container {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.cards li {
+  padding-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  list-style: none;
+  width: 200px;
+  height: 120px;
+  overflow: auto;
+  background-color: grey;
+  border-radius: 10px;
+}
+
+.cards li:hover {
+  cursor: pointer;
+  background-color: #8f8e8e;
+}
+
+.cards li button {
+  position: absolute;
+  font-size: 10px;
+  top: 5px;
+  right: 5px;
+}

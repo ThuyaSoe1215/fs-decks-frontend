@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Deck.css";
-import { getDeck } from "../api/getDeck";
+import { getDecks } from "../api/getDecks";
 import { createDeck } from "../api/createDeck";
 import { deleteDeck } from "../api/deleteDeck";
-import { decks } from "../api/getDeck";
+import { decks } from "../api/getDecks";
 
 const Decks = () => {
   const [title, setTitle] = useState("");
@@ -12,7 +12,7 @@ const Decks = () => {
 
   useEffect(() => {
     (async () => {
-      const data = await getDeck();
+      const data = await getDecks();
       setDecks(data);
     })();
   }, []);
