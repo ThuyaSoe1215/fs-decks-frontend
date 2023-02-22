@@ -36,6 +36,7 @@ const DeckDetail = () => {
 
   return (
     <div className="App">
+      <h1>{deck?.title}</h1>
       <ul className="cards">
         {cards.map((card, index) => (
           <li key={index}>
@@ -53,6 +54,7 @@ const DeckDetail = () => {
           onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
             setText(e.target.value)
           }
+          required
         />
         <button>Creat Card</button>
       </form>

@@ -31,6 +31,7 @@ const Decks = () => {
 
   return (
     <>
+      <h1>Your Decks</h1>
       <div className="container">
         <ul className="decks">
           {decks.map((deck) => (

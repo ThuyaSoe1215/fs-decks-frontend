@@ -16,7 +16,6 @@
 }
 
 .cards li {
-  padding-top: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,6 +26,8 @@
   overflow: auto;
   background-color: grey;
   border-radius: 10px;
+  padding: 12px;
+  padding-top: 25px;
 }
 
 .cards li:hover {

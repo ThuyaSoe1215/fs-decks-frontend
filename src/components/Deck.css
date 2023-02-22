@@ -26,6 +26,7 @@
   overflow: auto;
   background-color: grey;
   border-radius: 10px;
+  padding: 12px;
 }
 
 .decks li:hover {
